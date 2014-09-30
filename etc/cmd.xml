@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <log>
+        <file>/home/wangbinbin/imo_server/tools/mobi_client/src/log/bbwang_mobileagent.log</file>
+        <rank>DEBUG</rank>
+        <isbuf>FALSE</isbuf>
+        <lip>127.0.0.1</lip>
+        <lport>1820</lport>
+        <ip>127.0.0.1</ip>
+        <port>43388</port>
+    </log>
+	<host>114.80.80.30:35083</host>
+	<cmd>
+		<head>
+			<item name="unCmd">1002</item>
+		</head>
+		<randkey>1234567890123456</randkey>
+		<body>
+			<!--  type, 1:uint8_t, 2:uint16_t, 3:uint32_t, 4:uint64_t, 5:string -->
+			<item type="1" name="flag">0</item>
+			<item type="5" name="corp_account">58225499</item>
+			<item type="5" name="user_account">admin</item>
+			<item type="5" name="passwd">vegrcpdw</item>
+			<item type="2" name="status">257</item><!-- android:257,ios:513 -->
+			<item type="1" name="version">56</item>
+			<item type="2" name="build">2053</item>
+			<item type="1" name="promptonline">1</item>
+			<item type="5" name="userinfo">test</item>
+		</body>
+	</cmd>
+
+	<cmd>
+		<head>
+			 <item name="unCmd">1007</item>
+		</head>
+	</cmd>
+
+
+<!--
+admin
+Account:82424262 
+CorpId:0 
+Password:yugurdag 
+UserId:0 
+
+admin
+Account:65936353
+cid:230129
+pasd:kdhwdcfe 
+uid:4551167
+
+user3
+Account:6982611
+pasd:111111
+
+service
+Account:510086
+pasd:imo111
+
+-->
+	<cmd>
+		<head>
+			<item name="unCmd">2002</item>
+		</head>
+		<body>
+			<item type="3" name="unMask">9</item>
+		</body>
+	</cmd>
+
+	<cmd>
+		<head>
+			<item name="unCmd">20101</item>
+		</head>
+		<body>
+			<item type="3" name="trans_id">11</item>
+			<item type="3" name="qgroup_uc">0</item>
+		</body>
+	</cmd>
+
+	<cmd>
+		<head>
+			<item name="unCmd">20201</item>
+		</head>
+		<body>
+			<item type="3" name="trans_id">12</item>
+			<item type="3" name="ngroup_uc">0</item>
+		</body>
+	</cmd>
+
+	<cmd>
+		<head>
+			 <item name="unCmd">20001</item>
+		</head>
+		<body>
+			<item type="3" name="unTransId">13</item>
+			<item type="3" name="unCid">0</item>
+			<item type="3" name="unDeptId">0</item>
+			<item type="3" name="unDeptUc">0</item>
+		</body>		
+	</cmd>
+
+	<!--
+	<cmd>
+		<head>
+			 <item name="unCmd">20310</item>
+		</head>
+		<body>
+			<item type="3" name="unTransId">13</item>
+			<item type="3" name="toCID">22</item>
+			<item type="3" name="toUId">510086</item>
+			<item type="4" name="clientMsgId">14631212</item>
+			<item type="5" name="msg">你好，4550031，欢迎加入我们！</item>
+		</body>		
+	</cmd>
+
+	<cmd>
+		<head>
+			 <item name="unCmd">4010</item>
+		</head>
+		<body>
+			<item type="3" name="trans_id">16</item>
+			<item type="3" name="cid">230129</item>
+			<item type="3" name="UId">4551167</item>
+			<item type="3" name="mask">32767</item>
+		</body>		
+	</cmd>
+	<cmd>
+		<head>
+			 <item name="unCmd">5026</item>
+		</head>
+	</cmd>
+-->
+
+<!--
+Account:82424262 
+CorpId:229995 
+Password:yugurdag 
+UserId:4550031 
+-->
+
+	<cmd>
+		<head>
+			 <item name="unCmd">1003</item>
+		</head>
+	</cmd>
+
+
+</root>

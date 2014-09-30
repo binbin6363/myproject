@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <log>
+        <file>/home/wangbinbin/imo_server/new_mobiled/log/bbwang_mobileagent.log</file>
+        <rank>DEBUG</rank>
+        <isbuf>FALSE</isbuf>
+        <lip>127.0.0.1</lip>
+        <lport>1820</lport>
+        <ip>127.0.0.1</ip>
+        <port>43388</port>
+    </log>
+	<host>114.80.80.30:35083</host>
+	<userfile>/home/wangbinbin/imo_server/new_mobiled/presstool/etc/users.xml</userfile>
+<!--	<host>114.80.80.30:35023</host> -->
+<!--
+
+	user1
+	1824913
+	111111
+
+	admin
+	Account:82424262 
+	CorpId:0 
+	Password:yugurdag 
+	UserId:0 
+
+	admin
+	Account:65936353
+	cid:230129
+	pasd:kdhwdcfe 
+	uid:4551167
+
+	user3
+	Account:6982611
+	pasd:111111
+
+	service
+	Account:510086
+	pasd:imo111
+		<cmd>
+			<head>
+				<item name="unCmd">4005</item>
+			</head>
+			<body>
+				<item type="3" name="cid">229994</item>
+				<item type="3" name="uid">4550023</item>
+				<item type="3" name="groupid">223</item>
+				<item type="5" name="msg">test, 添加外部联系人</item>
+			</body>
+		</cmd>
+
+-->
+	<cmd>
+		<head>
+			<item name="unCmd">1002</item>
+		</head>
+		<randkey>1234567890123456</randkey>
+		<body>
+			<!--  type, 1:uint8_t, 2:uint16_t, 3:uint32_t, 4:uint64_t, 5:string -->
+			<item type="1" name="flag">0</item>
+			<item type="5" name="corp_account">65936353</item>
+			<item type="5" name="user_account">admin</item>
+			<item type="5" name="passwd">kdhwdcfe</item>
+			<item type="2" name="status">257</item><!-- android:257,ios:513 -->
+			<item type="1" name="version">56</item>
+			<item type="2" name="build">2053</item>
+			<item type="1" name="promptonline">1</item>
+			<item type="5" name="userinfo">test</item>
+		</body>
+	</cmd>
+	<cmd>
+		<head>
+			 <item name="unCmd">1007</item>
+		</head>
+	</cmd>
+
+	<!--
+	<cmd>
+		<head>
+			 <item name="unCmd">20391</item>
+		</head>
+	</cmd>
+
+	<cmd>
+		<head>
+			<item name="unCmd">2021</item>
+		</head>
+		<body>
+			<item type="3" name="mask">17</item>
+			<item type="3" name="deptid">0</item>
+		</body>
+	</cmd>
+
+
+	<cmd>
+		<head>
+			<item name="unCmd">2020</item>
+		</head>
+		<body>
+			<item type="3" name="transid">9</item>
+			<item type="5" name="useraccount">admin</item>
+			<item type="5" name="corpaccount">82424262</item>
+		</body>
+	</cmd>
+
+	<cmd>
+		<head>
+			<item name="unCmd">9002</item>
+		</head>
+		<body>
+			<item type="3" name="transid">9</item>
+			<item type="3" name="ngroup_id">1950933</item>
+			<item type="3" name="num">1</item>
+			<item type="3" name="cid">229994</item>
+			<item type="3" name="uid">455003</item>
+		</body>
+	</cmd>
+
+	<cmd>
+		<head>
+			<item name="unCmd">8200</item>
+		</head>
+		<body>
+			<item type="3" name="transid">9</item>
+			<item type="3" name="property">17</item>
+			<item type="5" name="groupname">qgroup922</item>
+			<item type="5" name="groupname">my place, my decision</item>
+		</body>
+	</cmd>
+	<cmd>
+		<head>
+			<item name="unCmd">8302</item>
+		</head>
+		<body>
+			<item type="3" name="transid">9</item>
+			<item type="3" name="groupid">1</item>
+			<item type="3" name="num">1</item>
+			<item type="3" name="cid">229993</item>
+			<item type="3" name="uid">4550015</item>
+		</body>
+	</cmd>
+
+	<cmd>
+		<head>
+			<item name="unCmd">20101</item>
+		</head>
+		<body>
+			<item type="3" name="trans_id">11</item>
+			<item type="3" name="qgroup_uc">0</item>
+		</body>
+	</cmd>
+
+	<cmd>
+		<head>
+			<item name="unCmd">20201</item>
+		</head>
+		<body>
+			<item type="3" name="trans_id">12</item>
+			<item type="3" name="ngroup_uc">0</item>
+		</body>
+	</cmd>
+	<cmd>
+		<head>
+			 <item name="unCmd">20001</item>
+		</head>
+		<body>
+			<item type="3" name="unTransId">13</item>
+			<item type="3" name="unCid">0</item>
+			<item type="3" name="unDeptId">0</item>
+			<item type="3" name="unDeptUc">0</item>
+		</body>		
+	</cmd>
+
+	<cmd>
+		<head>
+			 <item name="unCmd">20310</item>
+		</head>
+		<body>
+			<item type="3" name="unTransId">13</item>
+			<item type="3" name="toCID">43</item>
+			<item type="3" name="toUId">4550031</item>
+
+			<item type="4" name="clientMsgId">137582106415</item>
+			<item type="5" name="msg">hello，4550031，欢迎加入我们！</item>
+		</body>		
+	</cmd>
+
+
+	<cmd>
+		<head>
+			 <item name="unCmd">3012</item>
+		</head>
+		<body>
+			<item type="3" name="transid">34</item>
+			<item type="3" name="cu">0</item>
+		</body>		
+	</cmd>
+-->
+
+	<cmd>
+		<head>
+			 <item name="unCmd">4005</item>
+		</head>
+		<body>
+			<item type="3" name="cid">229994</item>
+			<item type="3" name="uid">4550023</item>
+			<item type="3" name="groupid">35</item>
+			<item type="5" name="msg">welcome</item>
+		</body>		
+	</cmd>
+
+	<cmd>
+		<head>
+			 <item name="unCmd">20110</item>
+		</head>
+		<body>
+			<item type="3" name="transid">94</item>
+			<item type="3" name="qgroupid">2553443</item>
+			<item type="4" name="clientmsgid">140737488879616</item>
+			<item type="5" name="msg">welcome, test qgroup chat</item>
+		</body>		
+	</cmd>
+
+	<!--
+	<cmd>
+		<head>
+			 <item name="unCmd">9046</item>
+		</head>
+		<body>
+			<item type="3" name="trans_id">16</item>
+			<item type="3" name="createsource">1</item>
+			<item type="5" name="name">ngroup922</item>
+		</body>		
+	</cmd>
+	<cmd>
+		<head>
+			 <item name="unCmd">4010</item>
+		</head>
+		<body>
+			<item type="3" name="trans_id">16</item>
+			<item type="3" name="cid">230129</item>
+			<item type="3" name="UId">4551167</item>
+			<item type="3" name="mask">32767</item>
+		</body>		
+	</cmd>
+	
+	<cmd>
+		<head>
+			 <item name="unCmd">5026</item>
+		</head>
+	</cmd>
+-->
+
+<!--
+Account:82424262 
+CorpId:229995 
+Password:yugurdag 
+UserId:4550031 
+-->
+
+	<cmd>
+		<head>
+			 <item name="unCmd">1003</item>
+		</head>
+	</cmd>
+
+
+</root>
